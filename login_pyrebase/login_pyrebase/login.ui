@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainApp</class>
+ <widget class="QMainWindow" name="MainApp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>470</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Neuron Music</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*
+{
+font: 9pt &quot;MS Reference Sans Serif&quot;;
+}
+
+
+QLabel#fondo
+{
+	background-image: url(:/neuron_music/img/fondo_login.png);
+
+
+}
+QLabel#logo_neuron
+{
+
+background-image: url(:/neuron_music/img/logo_neuron.png);
+border-image: url(:/neuron_music/img/logo_neuron.png);
+
+}
+#boton_aceptar
+{
+
+border-radius: 10px;
+background-color: rgb(21, 210, 169);
+font:bold;
+	color: rgb(0, 0, 0);
+
+
+}
+#boton_aceptar:hover
+{
+	background-color: rgba(139, 255, 201, 237);
+
+}
+#boton_aceptar:hover:pressed
+{
+ background-color: rgba(139, 139, 139, 233);
+color:  rgb(21, 210, 169);
+}
+#l_inicio
+{
+background-color: rgb(21, 210, 169);
+border-radius: 10px;
+color: rgb(0, 0, 0);
+}
+#label_email
+{
+background-image: url(:/neuron_music/img/line_email.png);
+background-repeat: no-repeat;
+}
+#label_pass
+{
+background-image: url(:/neuron_music/img/line_password.png);
+background-repeat: no-repeat;
+}
+#fondo_email, #fondo_pass
+{
+background-color: rgb(191, 191, 191);
+border-radius: 10px;
+}
+ QLineEdit
+{
+border-radius: 10px;
+
+}
+QLabel#rectangulo
+{
+border-width: 3px;
+border-style: solid;
+ border-radius: 15px;
+border-color:  #FFFFFF;
+
+
+}
+#fondo_email:hover, #fondo_pass:hover
+{
+background-color: rgba(139, 139, 139, 233);
+
+}
+QLabel#rectangulo:hover
+{
+border-color:rgba(139, 139, 139, 233);
+}
+#inicio_sesion
+{  
+image:url(:/neuron_music/img/inicio.png);
+}
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="principal">
+   <widget class="QPushButton" name="boton_aceptar">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>360</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Aceptar</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="user">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>220</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>correo electrónico</string>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="password">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>290</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>contraseña</string>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logo_neuron">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-10</y>
+      <width>181</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l_inicio">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>110</y>
+      <width>251</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_email">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>230</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_pass">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>300</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fondo">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>-30</y>
+      <width>481</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>º</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fondo_email">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>220</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fondo_pass">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>290</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rectangulo">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>100</y>
+      <width>251</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="inicio_sesion">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>110</y>
+      <width>181</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>fondo</zorder>
+   <zorder>boton_aceptar</zorder>
+   <zorder>logo_neuron</zorder>
+   <zorder>l_inicio</zorder>
+   <zorder>fondo_email</zorder>
+   <zorder>user</zorder>
+   <zorder>label_email</zorder>
+   <zorder>fondo_pass</zorder>
+   <zorder>password</zorder>
+   <zorder>label_pass</zorder>
+   <zorder>rectangulo</zorder>
+   <zorder>inicio_sesion</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../img/neuron.qrc"/>
+ </resources>
+ <connections/>
+</ui>
