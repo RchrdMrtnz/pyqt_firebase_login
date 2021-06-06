@@ -16,13 +16,32 @@
     <verstretch>0</verstretch>
    </sizepolicy>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>450</width>
+    <height>470</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>450</width>
+    <height>470</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>Neuron Music</string>
+   <string>Login Pyrebase</string>
   </property>
   <property name="styleSheet">
    <string notr="true">*
 {
 font: 9pt &quot;MS Reference Sans Serif&quot;;
+}
+#border{
+border-width: 3px;
+border-style: solid;
+border-color:  #fff;
+border-top:none;
+
 }
 
 
@@ -161,19 +180,6 @@ image:url(:/neuron_music/img/inicio.png);
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="logo_neuron">
-    <property name="geometry">
-     <rect>
-      <x>-10</x>
-      <y>-10</y>
-      <width>181</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QLabel" name="l_inicio">
     <property name="geometry">
      <rect>
@@ -281,9 +287,21 @@ image:url(:/neuron_music/img/inicio.png);
      <string/>
     </property>
    </widget>
+   <widget class="QLabel" name="border">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>0</y>
+      <width>444</width>
+      <height>466</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
    <zorder>fondo</zorder>
-   <zorder>boton_aceptar</zorder>
-   <zorder>logo_neuron</zorder>
+   <zorder>border</zorder>
    <zorder>l_inicio</zorder>
    <zorder>fondo_email</zorder>
    <zorder>user</zorder>
@@ -293,10 +311,11 @@ image:url(:/neuron_music/img/inicio.png);
    <zorder>label_pass</zorder>
    <zorder>rectangulo</zorder>
    <zorder>inicio_sesion</zorder>
+   <zorder>boton_aceptar</zorder>
   </widget>
  </widget>
  <resources>
-  <include location="../img/neuron.qrc"/>
+
  </resources>
  <connections/>
 </ui>

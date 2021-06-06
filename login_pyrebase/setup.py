@@ -24,16 +24,7 @@ class mylogin(QtWidgets.QMainWindow):
         self.ui = Ui_MainApp()
         self.ui.setupUi(self)
         self.setWindowTitle("Login Firebase")
-        """icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/neuron_music/img/neuron.ico"),
-        QtGui.QIcon.Normal, QtGui.QIcon.On)
-        try:
-            widget.setWindowTitle('Neuron Music')
-            widget.setFixedSize(460, 470)
-            widget.setWindowIcon(icon)
-        except:
-            pass"""
-        # ******************#q
+        # ******************#
         # conexion firebase
         #******************#
         self.config = {"apiKey": "AIzaSyBVBUR6oftmJrFUue4wFf75i2OWLRHXlyI",
